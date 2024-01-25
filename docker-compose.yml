@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    container_name: google_searcher
+    command: ["python", "-m", "app"]
+    restart: "always"
+    ports:
+    - "9992:9992"
